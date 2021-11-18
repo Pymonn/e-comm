@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+#page1 {
+  background-color: rgb(255, 166, 0);
+  font-family: "Poppins", sans-serif;
+}
+.expand_button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.e-button {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 30px;
+  -webkit-transition: max-width 0.3s ease-in-out;
+  -moz-transition: max-width 0.3s ease-in-out;
+  -o-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s linear
+}
+
+.e-button-text {
+  display: block;
+  white-space: nowrap;
+  color: #fff
+}
+
+.e-button:hover {
+  background-color: #000;
+  color: #fff;
+  max-width: 280px
+}
+.signForm {
+  /* transform: translateY(50%); */
+  animation: transitionIn 1s;
+}
+
+.signupForm {
+  /* transform: translateY(50%); */
+  animation: circleMOve2 1s;
+}
+
+.color1 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.text-lead {
+  text-decoration: underline 1px;
+  font-style: italic;
+}
+
+.circle {
+  width: 800px;
+  height: 800px;
+  background-color: rgb(250, 225, 0);
+  position: fixed;
+  border-radius: 50%;
+  animation: circleMOve 1s;
+}
+
+.circle2 {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  border-radius: 50%;
+  animation: circleMOve 1s;
+}
+
+.circle3 {
+  width: 800px;
+  height: 800px;
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(50%);
+  animation: circleMOve2 1s;
+}
+
+.circle4 {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(60%);
+  animation: circleMOve2 1s;
+}
+
+#regTitle {
+  animation: fadeIn 2s;
+}
+
+#welcome {
+  animation: fadeIn 2s;
+}
+
+#text1 {
+  text-align: justify;
+  animation: fadeIn 2s;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+    @keyframes circleMOve {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes circleMOve2 {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(50%);
+      }
+    }
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: translateX(-50%) ;
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0) ;
+  }
+}
+
